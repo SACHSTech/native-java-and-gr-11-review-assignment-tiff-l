@@ -15,7 +15,7 @@ public class Review1{
   public static void main(String[] args) throws IOException{
     BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
     
-    System.out.print("Enter a month number: ");
+    System.out.print("Enter the month number: ");
     int monthNum = Integer.parseInt(key.readLine());
 
     System.out.print("Enter the day number: ");
