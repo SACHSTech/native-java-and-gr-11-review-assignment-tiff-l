@@ -1,6 +1,12 @@
 package gr11review.part1;
 import java.io.*;
 
+/**
+* A program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure.
+* @author: T. Lee
+*
+*/
+
 //javac -d bin src/gr11review/part1/Review2.java
 //java -classpath bin gr11review.part1.Review2
 

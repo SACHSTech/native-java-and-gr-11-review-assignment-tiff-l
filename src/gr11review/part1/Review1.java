@@ -1,9 +1,14 @@
 package gr11review.part1;
 import java.io.*;
 
+/**
+* A program that asks the user to enter a month number and day and then prints the day of the year.
+* @author: T. Lee
+*
+*/
+
 //javac -d bin src/gr11review/part1/Review1.java
 //java -classpath bin gr11review.part1.Review1
-
 
 public class Review1{
 
