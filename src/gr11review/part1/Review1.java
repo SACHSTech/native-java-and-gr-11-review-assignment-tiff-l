@@ -1,6 +1,5 @@
 package gr11review.part1;
 import java.io.*;
-import java.util.*;
 
 //javac -d bin src/gr11review/part1/Review1.java
 //java -classpath bin gr11review.part1.Review1
