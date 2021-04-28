@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 *
 */ 
 
-/*
+/* Compile commands
 javac -d bin src/gr11review/part1/Review4.java
 java -classpath bin gr11review.part1.Review4
 javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review4Test.java
@@ -21,22 +21,27 @@ public class Review4{
   public static void main(String[] args) throws IOException{
     BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
+    //Declare + initalize variables (if applicable)
     int numOfItems;
     double subtotal =0; 
     double price;
-    
+    double tax; 
+    double total;
+
+    //Record # of items user wants
     System.out.print("How many items do you want to buy? ");
     numOfItems = Integer.parseInt(key.readLine()); 
 
+    /*For loop that counts from 1-#ofitems user requested above. 
+    * Adds the subtotal
+    */
     for(int i = 1; i <= numOfItems; i++){
       System.out.print("Enter the price for item " +i+ ": ");
       price= Double.parseDouble(key.readLine());
       subtotal = subtotal + price;
     }
 
-    double tax; 
-    double total;
-
+    //Calculate tax + total
     tax = subtotal*.13;
     total = subtotal *1.13;
 

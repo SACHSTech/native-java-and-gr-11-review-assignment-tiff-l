@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 *
 */ 
 
-/*
+/* Compile commands
 javac -d bin src/gr11review/part1/Review8.java
 java -classpath bin gr11review.part1.Review8
 javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review8Test.java
@@ -18,27 +18,32 @@ public class Review8{
 
   public static void main(String[] args) throws IOException{
 
-  int triples;
-  int pull[][];
+  //Declare Variables
+  int triples =0;
   int i;
   int n;
   
+  //Define + initialize array 10000 rows, 3 columns 
+  int pull[][];
   pull = new int[1000][3];
 
-  triples = 0;
-
+  //For loop to load data into array.
   for (i = 0; i < 1000; i++) {
     for (n = 0; n < 3; n++) {
+      //Generate random # from 0-8 to load into array
       pull[i][n] = (int)(Math.random()*9);
       System.out.print(pull[i][n]+" ");
     }
 
     System.out.println("");
 
+    // if all values in a row are equal it counts towards a triple. 
     if(pull[i][0] == pull[i][1] && pull[i][1] == pull[i][2]){
       triples++;
     }
   }
+
+  //print # of triples
   System.out.println(triples);
   }
 }
