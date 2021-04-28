@@ -7,19 +7,22 @@ import java.io.*;
 *
 */
 
-//javac -d bin src/gr11review/part1/Review2.java
-//java -classpath bin gr11review.part1.Review2
-
+/*
+javac -d bin src/gr11review/part1/Review2.java
+java -classpath bin gr11review.part1.Review2
+javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review2Test.java
+java -jar lib/junit-platform-console-standalone-1.7.0-M1.jar --class-path bin -c gr11review.test1.Review2Test
+*/
 
 public class Review2{
 
   public static void main(String[] args) throws IOException{
     BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
     
-    System.out.println("0 - Print a joke about your hair");
-    System.out.println("1 - Print a joke about your feet");
-    System.out.println("2 - Print a joke about your clothes");
-    System.out.println("3 - Print a joke about your teacher");
+    System.out.println("0 - print a joke about your hair");
+    System.out.println("1 - print a joke about your feet");
+    System.out.println("2 - print a joke about your clothes");
+    System.out.println("3 - print a joke about your teacher");
 
     System.out.print("Choose a menu option: ");
 

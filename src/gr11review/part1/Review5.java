@@ -7,8 +7,12 @@ import java.text.DecimalFormat;
 *
 */ 
 
-//javac -d bin src/gr11review/part1/Review5.java
-//java -classpath bin gr11review.part1.Review5
+/*
+javac -d bin src/gr11review/part1/Review5.java
+java -classpath bin gr11review.part1.Review5
+javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review5Test.java
+java -jar lib/junit-platform-console-standalone-1.7.0-M1.jar --class-path bin -c gr11review.test1.Review5Test
+*/
 
 
 public class Review5{
@@ -35,7 +39,7 @@ public class Review5{
       years++; 
     }
 
-    System.out.print("The target amount will be earned in " + years + " years");
+    System.out.print("The target amount will be earned in " + years + " years.");
 
   }
 }
