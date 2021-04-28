@@ -22,7 +22,6 @@ public class Review4{
     double subtotal =0; 
     double price;
     
-    
     System.out.print("How many items do you want to buy? ");
     numOfItems = Integer.parseInt(key.readLine()); 
 
