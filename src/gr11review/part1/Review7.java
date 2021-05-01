@@ -41,16 +41,22 @@ public class Review7{
 
     }
 
-    for (int n = 1; n<length; n=n+2){
+   
+      for(int n =0; n<length; n=n+2){
+        oddWord = oddWord + "-";
+      }
+    
+
+    /*for (int n = 1; n<length; n=n+2){
       //Taking the odd numbered characters in the sentence to produce the following string.
       oddWord = oddWord + theSentence.charAt(n);
-    }
+    }*/
 
     //Print results
     System.out.println("There are " +length+ " characters in the sentence.");
     System.out.println("There are " +space+ " spaces in the sentence.");
     System.out.println("There are " +letterA+ " letter a in the sentence.");
-    System.out.println("Taking the odd numbered characters in the sentence produces the following string " +oddWord );
+    System.out.println(oddWord);
 
   }
 }

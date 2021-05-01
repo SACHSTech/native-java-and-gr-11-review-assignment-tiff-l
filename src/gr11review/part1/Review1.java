@@ -20,9 +20,9 @@ public class Review1{
     BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
     
     //Define variables
-    int monthNum
-    int dayNum 
-    int dayYr
+    int monthNum;
+    int dayNum; 
+    int dayYr;
 
     System.out.print("Enter the month number: ");
     monthNum = Integer.parseInt(key.readLine());
@@ -32,7 +32,7 @@ public class Review1{
 
     //if statements, accordingly adds the number of days passed at the start of each month (#s 1-9 correlate with the months: Jan - Dec)
 
-    if(monthNum == ){
+    if(monthNum == 1){
       monthNum = 0;
     } else if(monthNum == 2){
       monthNum = 31;

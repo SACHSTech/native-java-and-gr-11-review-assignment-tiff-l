@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 /* Compile commands
 javac -d bin src/gr11review/part1/Review6.java
 java -classpath bin gr11review.part1.Review6
-javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review6.java
+javac -d bin src/gr11review/part1/Review6.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review6Test.java
 java -jar lib/junit-platform-console-standalone-1.7.0-M1.jar --class-path bin -c gr11review.test1.Review6Test
 */
 
@@ -28,15 +28,12 @@ public class Review6{
     int numOfItems;
     double subtotal = 0; 
     double price = 1;
-    int i = 0;
     double tax; 
     double total;
     
     //Runs until the price entered equals 0. 
     while (price != 0){
-      //Add the item # (i) each time it loops
-      i++;
-      System.out.print("Enter the price for item " +i+ ": ");
+      System.out.print("Enter the price for an item: ");
       price= Double.parseDouble(key.readLine());
       subtotal = subtotal + price;
       
