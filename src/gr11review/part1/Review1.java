@@ -8,8 +8,8 @@ import java.io.*;
 */
 
 /* Compile commands
-javac -d bin src/gr11review/part1/Review2.java
-java -classpath bin gr11review.part1.Review2
+javac -d bin src/gr11review/part1/Review1.java
+java -classpath bin gr11review.part1.Review1
 javac -d bin src/gr11review/part1/Review1.java; javac -d bin -sourcepath src -classpath lib/junit-platform-console-standalone-1.7.0-M1.jar src/gr11review/test1/Review1Test.java
 java -jar lib/junit-platform-console-standalone-1.7.0-M1.jar --class-path bin -c gr11review.test1.Review1Test
 */

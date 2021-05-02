@@ -19,7 +19,7 @@ public class Review8{
   public static void main(String[] args) throws IOException{
 
   //Declare Variables
-  int triples =0;
+  int triples = 0;
   int i;
   int n;
   

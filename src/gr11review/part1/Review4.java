@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 * Asks the user how many items he/she would like to purchase. The program then gets the prices for the items one by one. At the end of entering items, print out the total, the tax (13%) and the grand total.* @author: T. Lee
 *
 */ 
-
+ 
 /* Compile commands
 javac -d bin src/gr11review/part1/Review4.java
 java -classpath bin gr11review.part1.Review4
@@ -36,7 +36,7 @@ public class Review4{
     * Adds the subtotal
     */
     for(int i = 1; i <= numOfItems; i++){
-      System.out.print("Enter the price for item " +i+ ": ");
+      System.out.print("Enter the price for item " + i + ": ");
       price= Double.parseDouble(key.readLine());
       subtotal = subtotal + price;
     }

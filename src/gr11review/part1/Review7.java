@@ -32,17 +32,16 @@ public class Review7{
 
       character= theSentence.charAt(i);
       // find the number of a's   
-      if(character== 'a'||character== 'A'){
+      if(character == 'a'||character == 'A'){
         letterA++; 
       // find the number of spaces   
-      }else if(character==' '){
+      }else if(character == ' '){
         space++;
       }
-
     }
 
-   
-      for(int n =0; n<length; n=n+2){
+    //Loop to print all odd characters as "----"
+    for(int n = 0; n < length; n = n + 2){
         oddWord = oddWord + "-";
       }
     
@@ -53,9 +52,9 @@ public class Review7{
     }*/
 
     //Print results
-    System.out.println("There are " +length+ " characters in the sentence.");
-    System.out.println("There are " +space+ " spaces in the sentence.");
-    System.out.println("There are " +letterA+ " letter a in the sentence.");
+    System.out.println("There are " + length + " characters in the sentence.");
+    System.out.println("There are " + space + " spaces in the sentence.");
+    System.out.println("There are " + letterA + " letter a in the sentence.");
     System.out.println(oddWord);
 
   }

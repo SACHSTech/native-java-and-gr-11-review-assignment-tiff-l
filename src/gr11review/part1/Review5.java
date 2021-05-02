@@ -42,12 +42,12 @@ public class Review5{
 
     // While loop to count the number of years. (Note: only runs if the tatotal is less than the targer. )
     while (total < target){
-      total = (total+yearly_amount)*(1+compound_interest_rate/100);
+      total = (total+yearly_amount)*(1 + compound_interest_rate / 100);
       years++; 
     }
 
     //Print the target years to the system.
-    System.out.println("The target amount will be earned in "+years+" years.");
+    System.out.println("The target amount will be earned in " + years + " years.");
 
   }
 }
